@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <form name="calc" id="calc">
+        <div class="answer1">
+          <input type="text" id="ans" name="ans" placeholder="Calculate" />
+        </div>
+        <div class="answer2">
+          <input type="text" name="ans1" id="" />
+        </div>
+        <div class="row1">
+          <input type="button" value="1" onclick="calc.ans.value += '1'" />
+          <input type="button" value="2" onclick="calc.ans.value += '2'" />
+          <input type="button" value="3" onclick="calc.ans.value += '3'" />
+          <input type="button" value="+" onclick="calc.ans.value += '+'" />
+        </div>
+        <div class="row2">
+          <input type="button" value="4" onclick="calc.ans.value += '4'" />
+          <input type="button" value="5" onclick="calc.ans.value += '5'" />
+          <input type="button" value="6" onclick="calc.ans.value += '6'" />
+          <input type="button" value="-" onclick="calc.ans.value += '-'" />
+        </div>
+        <div class="row3">
+          <input type="button" value="7" onclick="calc.ans.value += '7'" />
+          <input type="button" value="8" onclick="calc.ans.value += '8'" />
+          <input type="button" value="9" onclick="calc.ans.value += '9'" />
+          <input type="button" value="*" onclick="calc.ans.value += '*'" />
+        </div>
+        <div class="row4">
+          <input
+            type="button"
+            value="C"
+            onclick="calc.ans.value = '', calc.ans1.value=''" />
+          <input type="button" value="0" onclick="calc.ans.value += '0'" />
+          <input type="button" value="." onclick="calc.ans.value += '.'" />
+          <input type="button" value="/" onclick="calc.ans.value += '/'" />
+        </div>
+        <div class="equal">
+          <input
+            type="button"
+            value="="
+            onclick="calc.ans.value = eval(calc.ans.value), calc.ans1.value = eval(calc.ans.value)" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

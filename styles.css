@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: rgb(243, 243, 243);
+}
+
+.container {
+  display: grid;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 229, 201);
+  box-shadow: 4px 4px 15px #000;
+}
+
+.answer1 input,
+.answer2 input {
+  width: 206px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  color: brown;
+  padding: 7px;
+  outline: none;
+  opacity: 0.9;
+}
+
+::placeholder {
+  color: brown;
+  opacity: 0.85;
+}
+
+.row1 input,
+.row2 input,
+.row3 input,
+.row4 input {
+  width: 52px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  color: brown;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+.row1 input:hover,
+.row2 input:hover,
+.row3 input:hover,
+.row4 input:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.row1 input:active,
+.row2 input:active,
+.row3 input:active,
+.row4 input:active {
+  opacity: 0.7;
+}
+
+.equal input {
+  width: 220px;
+  font-size: 2rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  padding: 5px;
+  color: brown;
+  opacity: 0.9;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: brown;
+}
